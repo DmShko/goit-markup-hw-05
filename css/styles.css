@@ -156,9 +156,7 @@ body {
 }
 
 .page-header{
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    
     border-bottom: 1px solid #E7E9FC;
 
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -192,6 +190,7 @@ body {
     align-items: center;
     /*^As demand LMS!!!^*/
 }
+
 .menu-link,
 .menu-item {
     font-size: 16px;
@@ -199,6 +198,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--basic-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link::after {
@@ -240,6 +241,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
+
 }
 
 .address-list{
@@ -251,6 +254,8 @@ body {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*       /MENU/ADDRESS       */
@@ -305,6 +310,7 @@ body {
     min-width: 169px;
   
     background: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*         /HERO             */
 
@@ -448,6 +454,7 @@ body {
     height: 40px;
     background-color: var(--logo-web-color);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -480,6 +487,7 @@ body {
     height: 88px;
     background-color: transparent;
     padding: 16px 32px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -546,10 +554,15 @@ body {
     margin-bottom: 16px;
 }
 
+.studio-container {
+    margin-right: 120px;
+}
+
 .footer-container {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
-    gap: 120px; 
+    /* gap: 120px;  */
 }
 
 .footer-studio {
@@ -565,6 +578,7 @@ body {
     height: 40px;
     background-color: var(--logo-web-color);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons {
@@ -610,6 +624,7 @@ body {
     border-radius: 4px;
    
     background: var(--portfolio-button-background-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .topic-list{
@@ -738,10 +753,9 @@ body {
     }
 
     .backdrop-close {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
+        position: absolute;
+        top: 32px;
+        right: 32px;
         width: 24px;
         height: 24px;
         background-color: #E7E9FC;
@@ -757,5 +771,7 @@ body {
         justify-content: center;
         align-items: center;
         fill: currentColor;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 /*         /BACKDROP             */
